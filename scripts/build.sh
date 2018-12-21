@@ -7,7 +7,7 @@ set -o errexit
 rm -rf build
 
 # Create a temporary directory to place ignored files (e.g. examples).
-tmp_dir="$(mktemp -dp.)"
+tmp_dir="$(mktemp -d)"
 
 # Move the ignored files to the temporary directory.
 while IFS="" read -r ignored
