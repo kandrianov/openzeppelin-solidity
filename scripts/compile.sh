@@ -35,6 +35,7 @@ module.exports = {
 npx truffle compile
 
 # Modify the paths in the artifacts to make it look as if they were built in the root
+# On OSX sed doesn't support in-place parameter. To make it work install gnu-sed (brew install gnu-sed --with-default-names)
 sed --in-place --expression "s/\/$SOLC_05_DIR//g" build/contracts/*.json
 
 # Copy them back into the root
