@@ -39,4 +39,4 @@ sed --in-place --expression "s/\/$SOLC_05_DIR//g" build/contracts/*.json
 
 # Copy them back into the root
 cd ..
-cp --recursive "$SOLC_05_DIR"/build build
+cp -r "$SOLC_05_DIR"/build build
