@@ -16,7 +16,7 @@ npm init --yes
 npm install --save-dev truffle@5.0.0
 
 rm -rf contracts
-ln --symbolic ../contracts contracts
+ln -s ../contracts contracts
 
 # Delete any previous build artifacts
 rm -rf build/
